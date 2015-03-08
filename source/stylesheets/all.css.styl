@@ -1,4 +1,160 @@
-@charset "utf-8"
+//=require bootstrap.min
+hypblue = #348AF8
+backgroundblue = #73AED8
+brand-success = #5cb85c
 
-body
-  font-family sans-serif
+h1
+  font-size 34px
+
+header
+  h1
+    font-family 'Comfortaa', serif
+    color hypblue
+
+  .phone
+    text-align right
+    font-size 22px
+    font-weight 500
+    min-width 270px
+    margin-top 27px
+    font-family 'Merriweather', serif
+
+.main-content
+  h2
+    font-size 24px
+  section
+    margin-top 40px
+    &:first-of-type
+      margin-top 0
+
+    .video iframe
+      width 350*2px
+      height 197*2px
+
+.side-panel
+  background #f8f8f8
+  h1
+    font-size 26px
+  section
+    margin-top 50px
+    margin-bottom 50px
+    &:first-of-type
+      margin-top 20px
+    &:last-of-type
+      margin-bottom 20px
+
+    .video iframe
+      width 350px
+      height 197px
+
+.training-3d form input.form-control
+  width: 100%
+  margin-left -15px
+
+nav
+  width 100%
+  ul li > a
+    padding 14px 15px
+  ul:nth-of-type(2)
+    &.navbar-nav.navbar-right
+      margin-right 0
+
+  font-family 'Merriweather'
+  font-size 18px
+  color rgb(27, 48, 159)
+
+.navbar-nav li.start-here > a
+  border-radius 5px
+  margin-top 3px
+  margin-right 2px
+  padding 12px 8px
+  color white
+  background brand-success
+  &:hover
+    color white
+    background darken(brand-success, 10%)
+
+.scoop
+  img
+    height auto
+  form.form-inline
+    input
+      width 100%
+
+.location
+  .location-img
+    font-size small
+    img
+      margin-top 10px
+      width 100%
+      height auto
+  .location-text
+    h1
+      margin-top 0
+
+.contact-us .alert, .scoop .alert
+  display none
+
+.contact
+  .text
+    h1
+      margin-top 0
+  .img
+    img
+      width 65px
+      height auto
+
+form.email-form
+  margin-top 15px
+  input[type='submit']
+    margin-left: 0
+
+.robbie-img
+  img
+    width: 200px
+    height: auto
+    margin-right 25px
+    margin-bottom 8px
+  font-size small
+  float left
+
+blockquote
+  border none
+  padding 5px
+  margin 0
+  p
+    &:before
+      content: '"'
+    &:after
+      content: '"*'
+
+p.h-card
+  .p-street-address, .p-postal-code, .p-country-name
+    display: block
+  .p-locality:after
+    content: ', '
+  .p-country-name
+    margin-bottom: 5px
+  .fa
+    margin-right: 7px
+  .p-tel:after
+    content: ''
+    display: block
+
+p.map a
+  display: block
+
+textarea
+  height 6em
+
+body > footer
+  margin-top 30px
+  .disclaimers
+    border-top-left-radius 5px
+    border-top-right-radius 5px
+    background linear-gradient(top, lighten(hypblue, 80%), lighten(hypblue, 60%))
+    font-size small
+    padding 10px 20px
+
+.bootcamp-title
+  margin-top 28px

@@ -1,0 +1,31 @@
+section.contact-us
+  .alert.alert-success.alert-dismissable
+    | Your question has been received. You will have your answer shortly.
+  .alert.alert-danger.alert-dismissable
+    button.close type='button' data-dismiss='alert' aria-hidden='true' =="&times;"
+    | Could not send your request.
+    br
+    ' Please call
+    strong> 905-634-4777
+    ' or email us directly at
+    strong> support at(@) burlingtonhypnosis dot(.) ca
+    ' or try again later.
+  .contact.row
+    .text.col-sm-9
+      h1 Ask The Hypnotist
+      | Get Your Questions Answered By A Leading Authority On Hypnosis
+    .img.col-sm-3
+      a href="https://plus.google.com/+RobbieSpierMiller?rel=author" target="_blank"
+        img.img-circle src="images/robbie-spier-miller-2.jpg" alt="Robbie Spier Miller"
+  form.email-form action='http://bh-contact-us.herokuapp.com/contact_us' method='POST'
+    input.form-control type='hidden' name='contact[human]'
+    .form-group
+      label Email
+      input.form-control type='email' name='contact[email]'
+    .form-group
+      label Phone
+      input.form-control type='phone' name='contact[phone]'
+    .form-group
+      label Questions
+      textarea.form-control name='contact[message]'
+    input.btn.btn-primary type='submit'

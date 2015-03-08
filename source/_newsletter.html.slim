@@ -1,0 +1,23 @@
+section.scoop
+  .alert.alert-success.alert-dismissable
+    | You have been subscribed to our newsletter.
+  .alert.alert-danger.alert-dismissable
+    button.close type='button' data-dismiss='alert' aria-hidden='true' =="&times;"
+    | Could not complete your request
+    br
+    ' Please contact us directly at
+    strong> 1-800-971-5744
+    ' or email us at
+    strong> support at(@) burlingtonhypnosis dot(.) ca
+    ' and we will put you on the list.
+  h1 Get The Scoop
+  .row
+    .col-sm-8
+      p Sign up for our free Hypnosis Training Canada Newsletter:
+      ul
+        li Get valuable information
+        li Stay up-to-date on important hypnosis industry news
+        li Keep up with our latest hypnosis training schedule
+    img.col-sm-4.img-circle src="images/bigstock-48929969-scoop.jpg"
+  .row
+    = partial 'newsletter_form', locals: {button_title: 'Get the Scoop'}
