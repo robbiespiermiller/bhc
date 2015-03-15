@@ -4,6 +4,16 @@ seo_title: "Burlington Hypnosis Centre | Weight Loss Hypnosis, Stop Smoking"
 seo_description: ""
 seo_keywords: ""
 
+video_quotes:
+  -
+    title: "Pack-A-Day Smoker Quits With Hypnosis"
+    src: 'https://www.youtube.com/embed/4J_hVBrzMlE'
+
+  -
+    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
+    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
+
+
 quotes:
   -
     title: Smoker Shocked At How Well Hypnosis Worked
@@ -26,23 +36,25 @@ video_quote_large:
     = partial "_video_quote", locals: current_page.data.video_quote_large.first
 
   section
+    .content-img
+      img src="images/2015-readers-choice-gold-best-weight-loss.jpg" alt="Burlington Post Reader's Choice Best Weight Loss Clinic 2015"
+      h2 Best Weight Loss Clinic
+    
+     
+      
     h3 Are You Hypnotizable?  <a href="can-i-be-hypnotized.html">Take The Quiz</a>
 
     h3 Call now for your free consultation 905-634-4777
 
     p Custom hypnosis programs to lose weight, stop smoking, increase self-confidence and self-esteem, reduce stress, manage pain, improve sleep, get over fears, break habits, help with relationships, and improve sports and academic performance.
 
-    p World class hypnosis and neuro-linguistics
-    <a href="http://www.hypnosistrainingcanada.com">training</a>
-    for professional hypnotists and hypnotherapists in the Greater Toronto Area, and across Ontario, Canada, the United States and internationally. Founding member of the Master Hypnotist Society.
-
-    p To know if this is right for you, call for your free screening.
+    p To know if this is right for you, call for your free screening. 
 
     p Call now 905-634-4777
 
-    p Offering hypnosis to Burlington, Hamilton, Milton, Oakville, Stoney Creek, Dundas, Waterdown, Carlisle, Ancaster, St. Catharines, Mississauga and Greater Toronto since 2006.
+    p Offering hypnosis to Burlington, Halton Hamilton, Milton, Oakville, Stoney Creek, Dundas, Waterdown, Carlisle, Ancaster, St. Catharines, Mississauga and Greater Toronto since 2006.
 
-    h2 How We Can Help You: Programs at the Burlington Hypnosis Centre
+    h2 How We Can Help You: Programs at Burlington Hypnosis
 
     p Hypnosis uses the power of suggestion to help you reach your goals. Our hypnotism techniques can help you with the following:
     ul
@@ -57,7 +69,18 @@ video_quote_large:
       li <a href="hypnosis-for-sleep.html">Sleep Improvement</a>
       li <a href="mind-training.html">Sports and Academic Performance Improvement</a>
 
-    p Our popular programs are weight loss hypnosis, stop smoking hypnosis, stress management hypnosis and sleep hypnosis. Be one of our thousands of satisfied clients.
+    p Our popular programs are weight loss hypnosis, stop smoking hypnosis, stress management hypnosis and sleep hypnosis. Be one of our hundreds of satisfied clients.
+
+    h3 Become A Hypnotist
+    h5 Hypnosis Training For Personal & Professional Success
+
+    p We offer world class hypnosis and neuro-linguistics (NLP) <a href="http://www.hypnosistrainingcanada.com" target=="_blank">training</a>.  Whether you want to improve your personal life, advance your career or become a professional hypnotist, Hypnosis Training Canada is the place to do it.  We offer training to people in the Greater Toronto Area, across Ontario, Canada, the United States and internationally.  Our Master Hypnotist Society training prepares you for success.
+
+    p Get the benefits of high end, hands-on hypnosis training.  At Hypnosis Training Canada, you have the opportunity to earn your hypnosis and NLP certifications from these widely recognized and well respected hypnosis organizations:  The Master Hypnotist Society, ARCH Canada, NFNLP and the NGH.
+
+    p A select group of hypnosis students will have the chance to participate in internships and mentorships.  Here you have the opportunity to learn how to run a successful hypnosis practice, and take your hypnosis skills to the next level.  
+
+    p Call now to set up a free consultation.  We will discuss your wants, needs and goals, and see if Hypnosis Training Canada is right for you.  Call 905-634-4777.
 
     h3 Get rid of those unwanted pounds with Weight Loss Hypnosis!
 
@@ -88,6 +111,7 @@ video_quote_large:
 
 .side-panel.col-sm-4
   = partial 'contact_us_screening'
+  = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'newsletter'
   = partial 'title_quote', locals: current_page.data.quotes.last
