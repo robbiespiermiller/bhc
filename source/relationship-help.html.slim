@@ -4,51 +4,65 @@ seo_title: Save Your Relationship With Hypnosis | Burlington Hypnosis
 seo_keywords: ""
 seo_description: Relationship Problems?  Hypnosis can help.  Call now for your free screening 905-634-4777.
 
-quotes:
+video_quotes:
   -
-    title: "Anger & Resentment Gone - Marriage Now Happy & Strong"
-    quote: I have learned to let go of anger and resentment in my marriage and to learn true forgiveness.  I came concerned that my marriage was over.  I now know that my marriage is happy & strong and that letting go of the anger and resentment made way for a love and passion I thought had long died.
-    cite: Bonnie C., Law Clerk
+    title: "Kent & Janet Save Their Marriage With Hypnosis"
+    src: 'https://www.youtube.com/embed/eFRt0C_d1Lg'
   -
-    title: "Got Over Fear Of Abandonment - Relationships Better & Never Been Happier"
-    quote: I had troubles in relationships due to my fear of abandonment.  With hypnosis I have never felt more confident, in control, and alive.  I am finally able to work through issues and overcome jealousy.  I have noticed significant differences with my interactions with strangers, family and my relationship with my boyfriend.  I have a new perspective on life.  Never been happier.
-    cite:  Amanda L, Club Opening Specialist, Goodlife Fitness
-  -
-    title: "Resentful, Angry Couple Living Like Roommates Now Building Happy Life Together"
-    quote: We were living like roommates.  We were living our lives in the same house but there was no sense of connection or intimacy.  There was a feeling of resentment and anger always hovering.  Now we are starting to appreciate each other, and reconnecting with each other.  The affection and intimacy we once had is returning and there is renewed faith that we can now have a long, happy and satisfying life together!
-    cite:  A.M & B.M.
-  _
+    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
+    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
 
+quotes:
+ -
+    title: "Anger & Resentment Gone - Marriage Now Happy & Strong"
+    quote: "I have learned to let go of anger and resentment in my marriage and to learn true forgiveness.  I came concerned that my marriage was over.  I now know that my marriage is happy & strong and that letting go of the anger and resentment made way for a love and passion I thought had long died."
+    cite: Bonnie C, Law Clerk
+ -
+    title: "Got Over Fear Of Abandonment - Relationships Better & Never Been Happier"
+    quote: "I had troubles in relationships due to my fear of abandonment.  With hypnosis I have never felt more confident, in control, and alive.  I am finally able to work through issues and overcome jealousy.  I have noticed significant differences with my interactions with strangers, family and my relationship with my boyfriend.  I have a new perspective on life.  Never been happier."
+    cite:  Amanda L, Club Opening Specialist, Goodlife Fitness
+ -
+    title: "Resentful, Angry Couple Now Building Happy Life Together"
+    quote: "We were living like roommates.  We were living our lives in the same house but there was no sense of connection or intimacy.  There was a feeling of resentment and anger always hovering.  Now we are starting to appreciate each other, and reconnecting with each other.  The affection and intimacy we once had is returning and there is renewed faith that we can now have a long, happy and satisfying life together!"
+    cite:  A.M. and B.M.
+ -
     title: "Hypnosis Improves Confidence, Relationships"
-    quote:  I came to address destructive relationship habits - anger, confidence issues.  I'm finishing with more confidence, and better ways to cope.  I feel more capable of having healthier relationships.
-    cite:  Diane R.
-  - 
-    title: "Relationships Are Getting Better And Better"
-    quote:  Before I came here I did not treat some people well.  Now I feel in control of my responses and am more confident.  My relationships are getting better and better.
+    quote:  "I came to address destructive relationship habits - anger, confidence issues.  I'm finishing with more confidence, and better ways to cope.  I feel more capable of having healthier relationships."
+    cite:  Diane R
+ -
+    title: "Relationships Are Getting Better & Better"
+    quote: "Before I came here I did not treat some people well.  Now I feel in control of my responses and am more confident.  My relationships are getting better and better."
     cite:  Maureen H, Self-Employed
 
-
 ---
+
 .main-content.col-sm-8
   section
       h1 Relationship Help With Hypnosis
-
+      .content-img
+        <img alt="relationship help" src="../images/relationships.jpg">
       p If you are feeling stuck or confused, and having trouble in your relationships, hypnosis can help.  We specialize in the following areas:
       ul
         li Getting over a relationship and healing a broken heart
         li Letting go of jealousy and insecurity
         li Increasing emotional intimacy
         li Enhancing romance
+        li Staying in attraction to your partner
+        li Setting boundaries
         li Developing effective communication skills
-        li Building parenting skills
-
+        li Building a positive relationship dynamic
+        li Improving parenting skills
+    
       p Call now to set up your free hypnotic screening to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  Call us now to book your free screening 905-634-4777.
 
+      p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
+
+      h3 Call Now For Your FREE Hypnotic Screening - 905-634-4777
+
+      p Come visit up today! We offer a free 30-40 minute screening process to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  If we do not feel hypnosis will help you, we will tell you so.  Call us now to book your free screening 905-634-4777.
 
 .side-panel.col-sm-4
-  = partial 'title_quote', locals: current_page.data.quotes.first
+  = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'contact_us'
-  = partial 'title_quote', locals: current_page.data.quotes.second
-  = partial 'title_quote', locals: current_page.data.quotes.third
-  = partial 'title_quote', locals: current_page.data.quotes.fourth
+  = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.last
