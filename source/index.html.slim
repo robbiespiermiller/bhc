@@ -30,8 +30,11 @@ video_quote_large:
     src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
 
 ---
-.main-content.col-sm-8   
- 
+.main-content.col-sm-8
+
+  section.video
+    = partial "_video_quote", locals: current_page.data.video_quote_large.first
+
   section
     .content-img
       img src="images/2015-readers-choice-gold-best-weight-loss.jpg" alt="Burlington Post Reader's Choice Best Weight Loss Clinic 2015"
@@ -84,7 +87,7 @@ video_quote_large:
     p Shed those extra pounds with weight loss hypnosis! Hypnosis helps you change your attitude, motivation and behaviour so that you can make better choices regarding your food intake and exercise. Weight loss hypnosis assists you with making healthier choices, managing stress levels,  and developing a healthier lifestyle. If you are fed up with the hassle of carrying around excess weight, join our weight loss hypnosis program and say goodbye to those outrageous over specific diets and pre packaged foods forever!
 
     p “When I came to Burlington Hypnosis Centre I didn't feel in control of what or how much I ate and became quite overweight. Hypnosis has helped me take control of this and other issues in my life. I have successfully controlled the binge eating and have lost significant weight. I have much more energy and am happier in my own skin.”
-    
+
     p Brenda K.
 
     h3 You Can Stop Smoking By Hypnosis - Make It Easy For Yourself
@@ -92,7 +95,7 @@ video_quote_large:
     p Is smoking controlling your life? Do you wish you can stop but those pesky cravings keep coming back to haunt you?  Stop smoking hypnosis uses the power of suggestion to help you kick the habit. At our stop smoking hypnosis centre you can finally stop smoking naturally without pills, gums, patches, and vapours.
 
     p “I was a heavy smoker who was afraid of quitting. This program has made me realize that it's easier than you'd think. I am now a non-smoker! It's the best thing I have ever done for myself.”
-    
+
     p Janice W.
 
     h3 We Can Help You Sleep Better
@@ -100,16 +103,15 @@ video_quote_large:
     p Are you tired of the restless nights, tossing and turning and feeling exhausted the next day? Our Sleep Hypnosis program helps you sleep better. Sleep Hypnosis can help you surrender into a restful night of sleep. If you are having trouble sleeping well, Sleep Hypnosis can help you have the good night's sleep that you deserve.
 
     p “I always suffered from sleep problems. Now with hypnosis I sleep like a baby.”
-    
+
     p L.M.
 
     p Come see us today! Book a free 30-40 minute screening to see if hypnosis is right for you. It is fun and informative. We will provide you an honest and in depth explanation on how hypnosis can help you. If we do not think hypnosis will benefit you, we will tell you so. You can contact us at 905-634-4777, or come see us at our Burlington facility located at 2289 Fairview Street, Suite 423.
 
-  
+
 .side-panel.col-sm-4
   = partial 'contact_us_screening'
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'newsletter'
   = partial 'title_quote', locals: current_page.data.quotes.last
-

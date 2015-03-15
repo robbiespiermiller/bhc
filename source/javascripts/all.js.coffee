@@ -1,5 +1,6 @@
 #= require bootstrap.min
-#= require googleanalytics.js.coffee
+#= require googleanalytics
+#= require_tree .
 
 form_submit = (selector)->
   $(".#{selector} form").on 'submit', (e)->
@@ -12,3 +13,4 @@ form_submit = (selector)->
       $(".#{selector} .alert-danger").clone().appendTo(".#{selector}").show()
 
 form_submit('contact-us')
+>>>>>>> 1e9fd5efb36726a8e84807f0f49850613e065598
