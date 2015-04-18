@@ -7,12 +7,10 @@ seo_description: "Need help?  Hypnosis for weight loss, stop smoking, stress man
 
 video_quotes:
   -
-    title: "Angela Is Excited About Becoming A Hypnotist"
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
-  -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
+    title: "'It's The Best Investment I've Ever Made'"
+    src: 'https://www.youtube.com/embed/UbYPDDRJnFk?rel=0'
 
+ 
 quotes:
   -
     title: "Feel Great &amp; Look Great"
@@ -27,11 +25,7 @@ quotes:
     title: "Stopped Biting & Chewing Finger Nails With Hypnosis"
     quote: "I came to Burlington Hypnosis Centre to curb my 25+ year habit of chewing/biting my finger nails.  I have not only stopped this habit, I have begun to form other positive habits for my life.  I have gained more than clean healthy nails."
     cite:  A.K., Wastewater Operator
-  -
-    title: "Tried Everything To Stop Smoking - Hypnosis Works!"
-    quote:  "Tried the patch, gum, prescription medication, cold turkey and now hypnosis. The only one that has given me the ability to quit smoking has been hypnosis."
-    cite: Steve S.
-
+  
 ---
 
 .main-content.col-sm-8
@@ -65,7 +59,9 @@ quotes:
               <a href="hypnosis-for-kids.html">Hypnosis For Kids & Teenagers</a>
       li Other programs available upon request
         
-
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
+   
     h3 Call Now For Your FREE Hypnotic Screening - 905-634-4777
 
     p Come visit up today! We offer a free 30-40 minute screening process to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  If we do not feel hypnosis will help you, we will tell you so.  Call us now to book your free screening 905-634-4777.
@@ -77,8 +73,8 @@ quotes:
 
 
 .side-panel.col-sm-4
+  = partial 'readers_choice_side_nav'
   = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
-  = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
-  = partial 'title_quote', locals: current_page.data.quotes.last
+  = partial 'contact_us_screening'
+  = partial 'title_quote', locals: current_page.data.quotes[0]
+

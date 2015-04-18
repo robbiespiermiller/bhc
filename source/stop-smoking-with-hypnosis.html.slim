@@ -6,11 +6,19 @@ seo_description: "Quit Smoking Now. Call Burlington Hypnosis Centre at (905) 634
 
 video_quotes:
   -
-    title: "Pack A Day Smoker Quits Easily With Hypnosis"
-    src: 'https://www.youtube.com/embed/Y1pAXqIjN7s'
+    title: "Danny Finally Became A Non-Smoker With Hypnosis"
+    src: 'https://www.youtube.com/embed/vwSdyDDpaRA?rel=0'
   -
-    title: "'It's The Best Investment I've Ever Made'"
-    src: 'https://www.youtube.com/embed/UbYPDDRJnFk'
+    title: "Michelle Is 6 Years Smoke-Free With Hypnosis - Already Saved $20,000"
+    src: 'https://www.youtube.com/embed/j_EkfRMziUA?rel=0'
+  -
+    title: "Hypnosis Can Help You Finally Stop Smoking"
+    src: 'https://www.youtube.com/embed/S-cjF1nJmoU?rel=0'
+
+video_quote_large:
+  -
+    title: "After 31 Years, Bill Quits Smoking Easily With Hypnosis"
+    src: 'http://www.youtube.com/embed/lwL-hkHuc6Y?rel=0'
 
 quotes:
   -
@@ -34,8 +42,6 @@ quotes:
     title:  "New Dad Quits Pack-A-Day Habit With Hypnosis"
     quote:  "I tried all sorts of quit smoking methods.  I was desperate to quit for my soon to be born baby and my wife.  I found Burlington Hypnosis and right from the first meeting felt like a new person.  Not only did I quit after smoking since I was twelve, but I was able to work on a number of personal issues.  My wife and others have noticed a dramatic change in my attitude.  Thank you for giving me my life back."
     cite:  Aaron K, Technician
-
-  
 ---
 
 .main-content.col-sm-8
@@ -46,9 +52,10 @@ quotes:
 
     p Its obviously worth it to get smoking out of your life!  
 
-    <iframe width="520" height="293" src="https://www.youtube.com/embed/lwL-hkHuc6Y" frameborder="0" allowfullscreen></iframe>
-
     p Our stop smoking hypnosis program can help you quit smoking naturally. No patches, gum, drugs or vapours.    
+
+    section.video
+      = partial "_video_quote", locals: current_page.data.video_quote_large.first
 
     h3 You Are Fed Up With All The Excuses
 
@@ -75,9 +82,23 @@ quotes:
 
     p Call now to set up your free hypnotic screening to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  Call us now to book your free screening 905-634-4777.
 
+    h3 Get Paid Every Day To Be A Non-Smoker
+    p In Canada, a pack of cigarettes is $10 on average.  Here's how much money you save by quitting a pack-a-day habit:
+
+    p Daily: $10
+    p Monthly: $300
+    p Yearly: $3650
+    p 10 Years: $36,500
+    p 20 Years: $73,000
+    br
+    h5 Why suffer when you can get the help you need?  
+    h3 Call now for your free screening 905-634-4777
+
 .side-panel.col-sm-4
-  = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
-  = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'video_quote', locals: current_page.data.video_quotes.last
+  = partial 'contact_us_screening'
+  = partial 'title_quote', locals: current_page.data.quotes.first
+  = partial 'video_quote', locals: current_page.data.video_quotes[1]
   = partial 'title_quote', locals: current_page.data.quotes.last
+  = partial 'video_quote', locals: current_page.data.video_quotes[0]
+

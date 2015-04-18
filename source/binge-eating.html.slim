@@ -2,16 +2,13 @@
 title: "Stop Binge Eating | Burlington Hypnosis Centre"
 description: "Fed up with binge eating?  Call Burlington Hypnosis Centre at (905) 634-4777 to book your free screening today."
 seo_title: "Stop Binge Eating With Hypnosis"
-seo_keywords: "binging, binge eating, over-eating"
+seo_keywords: "binging, binge eating, over-eating, how to stop binge eating, binge eating hypnosis"
 
 video_quotes:
   -
     title: "Mom Ends Binge Eating & Gets Fit With Hypnosis"
     src: 'https://www.youtube.com/embed/WDyE7U6e01g'
-  -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
-
+ 
 quotes:
   -
     title: "Finally Off The Diet Roller Coaster"
@@ -26,16 +23,13 @@ quotes:
   -
     title: "Down 32 Pounds In 4 Months - Emotional Eating Gone"
     quote: "When I came I was desperate.  I spent my time eating and then beating myself up about it.  I started to tell myself I was meant to be fat and did not deserve to be happy.  I have been seeing Robbie for 4 months.  In that time I have lost 32 pounds.  I wish I had found Burlington Hypnosis Centre years ago."
+    cite:
 
   -
     title: "Food No Longer Security Blanket"
     quote:  "I have changed my lifestyle so that food is no longer my security blanket.  Water, exercise and healthy food choices have become a part of my daily life."
     cite: Meagan P.
 
-  -
-    title: "Now In Control With Weight Loss Hypnosis"
-    quote:  "In the past, on diets, I often felt I was being punished.  Therefore I would and could be very strict with myself.  However, I never got to the real reason I was over-eating.  So, would regain the loss.  I now feel with hypnosis that I am in control and not being punished, rather have open choices.  I can choose to eat more healthy and be more active because I want to.  I feel freer and not burdened by food."
-    cite: J.L., Marketing
 ---
 
 .main-content.col-sm-8
@@ -43,20 +37,31 @@ quotes:
     h1 The Naked Truth About Binge Eating
 
     p If you are banging your head against the wall trying to find out how to stop binge eating, the solution is all in your head.  Now, we are not suggesting that you hallucinate.  What we mean is you are running a pattern in your mind that keeps you trapped in a cycle of binge eating.  The cycle keeps going round and round, and your body keeps expanding just like a snowball rolling down a hill.
+
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
+
     p Now finally you can learn how to break the binge eating cycle and stop being a victim of your own mind.  Here’s how.
 
+   
     h3 Anger, Guilt & Self-Loathing
 
-    p People who suffer from binge eating tend to cringe at their own behaviour.  They berate themselves and hide away in disgust and shame.  They wouldn’t treat their worst enemy half as brutally as they treat themselves.  
+    p People who suffer from binge eating tend to cringe at their own behaviour.  They berate themselves and hide away in disgust and shame.  They wouldn’t treat their worst enemy half as brutally as they treat themselves.  They want to stop binge eating, but the don't know how to stop binge eating.
     p Of course our natural instinct is to protect ourselves.  So binge eaters who beat themselves up escape by binging even more!  Then they wake up the next day thinking “I already blew it, so why bother even trying?  I can’t stop eating. I’ll just throw it all out the window.”
     p Fortunately, there is a way out.  You can start by treating yourself with respect while you learn how to stop binging.  Some people are afraid of doing this because they are worried that if they forgive themselves they will fly out of control even more.  They believe that the self-punishment is meant to spur them on to success.  Think about it, if this was true, binge eating would be completely blitzed from the planet by now.
+
+    = partial 'title_quote_content', locals: current_page.data.quotes[3]
       
     h3 The Secret To Stop Binge Eating Is To Simply Surrender
 
     p Surrender?  It may sound crazy but give this some thought.  If binging and emotional eating are wreaking havoc on your life, calling a truce may be exactly what you need.
     p When you are at peace, it is a lot easier to tune into your body and know when you are hungry or full.  You can allow emotions to flow through you and choose to eat for reasons of nutrition and genuine hunger.  Feeling at peace makes it easier to recognize your real needs and find healthy ways to satisfy them.
+
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
+    br
     p It’s OK to be skeptical.  But this is for sure:  If you do what you have always done, you will get what you have always gotten. 
     p Only you can decide when you are ready to call a truce and end your binge eating. Hypnosis can help. To discover how, call us for a free consultation at 905-634-4777.
+
+    p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
 
 
     p Discover the secret to <a href="healthy-weight-loss.html">healthy weight loss</a>.
@@ -65,8 +70,7 @@ quotes:
 
 
 .side-panel.col-sm-4
+  = partial 'readers_choice_side_nav'
   = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
-  = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
-  = partial 'title_quote', locals: current_page.data.quotes.last
+  = partial 'contact_us_screening'
+  = partial 'title_quote', locals: current_page.data.quotes[0]

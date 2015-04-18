@@ -2,51 +2,44 @@
 title: "Weight Loss Hypnosis | Burlington Hypnosis Centre"
 description: "Shed those unwanted pounds!  Call Burlington Hypnosis Centre at (905) 634-4777 to book your free screening today."
 seo_title: "Weight Loss Hypnosis"
-seo_keywords: "weight loss hamilton,weight loss burlington,weight loss oakville,hypnotherapy hamilton, lose weight, lose weight hypnosis"
+seo_keywords: "weight loss hamilton, weight loss burlington, weight loss oakville, weight loss hypnosis, hypnosis for weight loss"
 
 video_quotes:
   -
-    title: "Angela Is Excited About Becoming A Hypnotist"
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
+    title: "Discover How To Finally Loss Weight With Hypnosis"
+    src: 'http://www.youtube.com/embed/9yikUemMPpI?rel=0'
   -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
+    title: "Chef Down 7 Sizes With Hypnosis & Feels Great!"
+    src: 'http://www.youtube.com/embed/EXcisJRL5AQ?rel=0'
+  -
+    title: "Weight Loss Hypnosis: 'The best thing I ever did'"
+    src: 'http://www.youtube.com/embed/wavh4As2CLo?rel=0'
+  
 
 quotes:
   -
-    title: "Weight Loss Hypnosis:  I finally feel like I am in control of my life"
+    title: "'I Finally Feel Like I Am In Control Of My Life'"
     quote: "Before I came to Burlington Hypnosis, I had tried many different forms of weight loss, from diet clinics, to diet pills, exercising alone and with a trainer, to always end up with the same weight issues.  Since coming here, I have seen/felt my mind take control of healthier thoughts, making exercise more fun and my eating habits better.  My clothes are fitting looser and I have a new exercise plan that leaves me feeling exhilarated and energetic.  I finally feel like I am in control of my life."
     cite: Irene D., Cost Accountant
 
   -
-    title: "Thrilled With The Weight Loss Results"
-    quote: "When I came here I was fed up with the way I looked and unable to motivate myself to change my bad habits. I did exercise, but not enough or enthusiastically. Now I look forward to each day, I love working out and the results are visible. I am taking better care of my body and am in control of what I eat and drink. My self esteem is great and my husband is thrilled with the results."
-    cite: Joan D, Fitness Instructor  
-
-  -
-    title: "Coke, Chip & Dip Addiction Gone"
+    title: "Coke, Chip & Dip Addiction Gone with Weight Loss Hypnosis"
     quote: "Before I began the weight loss hypnosis I knew I needed to make some serious changes to my eating and lifestyle choices.  A lifetime of drinking coke and a chip & dip addiction were preventing me from losing weight and had resulted in a diagnosis of diabetes.  I needed to stop drinking coke & eating chips, which was accomplished.  I am now exercising regularly and improving my diet daily."
+    cite: 
 
-  -
-    title: "Binging & Moodiness Ended - 'I feel like myself again'"
-    quote:  "Before coming to the Burlington Hypnosis Centre, I was feeling very irritable that I could never reach my weight loss goals.  I ate enormous amounts of food and I was very moody.  Robbie has helped me achieve my goals and was able to help me realize that I can do whatever I set my mind to.  I feel more energetic and more motivated than I have ever before.  Thanks to hypnosis, I feel like my true self again."
-    cite: Jacqueline S, Student
-
-  -
-    title: "Now In Control With Weight Loss Hypnosis"
-    quote:  "In the past, on diets, I often felt I was being punished.  Therefore I would and could be very strict with myself.  However, I never got to the real reason I was over-eating.  So, would regain the loss.  I now feel with hypnosis that I am in control and not being punished, rather have open choices.  I can choose to eat more healthy and be more active because I want to.  I feel freer and not burdened by food."
-    cite: J.L., Marketing
+ 
 ---
 
 .main-content.col-sm-8
   section
+
     h1 Discover How Weight Loss Hypnosis Can Help You Lose Weight Naturally And Keep It Off!
+  
     p Our unique weight loss hypnosis program will help you maintain a healthy lifestyle and avoid those pesky cravings. We offer you a safe and effective alternative to unhealthy and unrealistic  weight loss systems with weight loss hypnosis.
 
     p If you are fed up with roller coaster dieting and gimmicky or unrealistic weight loss solutions, our weight loss hypnosis is your opportunity to finally loss the weight and keep it off.
 
-    <iframe width="520" height="293" src="https://www.youtube.com/embed/EXcisJRL5AQ" frameborder="0" allowfullscreen></iframe>
-
+    
     h3 Our Weight Loss Hypnosis Solution:
 
     ul
@@ -57,6 +50,8 @@ quotes:
       li NO prepackaged foods or outrageous over-specific diets! 
 
     p We are confident that if you use this weight loss hypnosis program, you can join the thousands of successful clients who have lost the weight and KEPT IT OFF! 
+
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
 
     p Any weight loss program that does not incorporate healthy eating and exercise is not a realistic long-term change. We know that many of you can write the book on how to eat healthy and exercise, but you are having difficulty actually doing it consistently. That is why at our weight loss clinic we help you lose weight with hypnosis by adjusting your attitudes and behaviours to make healthy eating and exercise a part of your lifestyle. We believe this is the most effective way for you to maintain a healthy weight naturally. Our weight loss hypnosis method includes:
     ul
@@ -69,8 +64,8 @@ quotes:
       li Learning self-hypnosis so that you have the tools to consistently make the choices that maintain a healthy, fit lifestyle over time.
       
     p What a relief - now you can learn how to have natural weight loss without fad diets, supplements or packaged foods.
-
-    <iframe width="520" height="293" src="https://www.youtube.com/embed/wavh4As2CLo" frameborder="0" allowfullscreen></iframe>
+    = partial 'title_quote_content', locals: current_page.data.quotes[0]
+    
     p Discover the secret to <a href="healthy-weight-loss.html">healthy weight loss</a>.
     p <a href="hypnosis-weight-loss-studies.html">Learn more</a> about weight loss hypnosis.
     p Find out how hypnosis can help you <a href="binge-eating.html">stop binge eating</a>.
@@ -78,8 +73,8 @@ quotes:
 
 
 .side-panel.col-sm-4
-  = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
-  = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
-  = partial 'title_quote', locals: current_page.data.quotes.last
+  = partial 'readers_choice_side_nav'
+  = partial 'video_quote', locals: current_page.data.video_quotes[0]
+  = partial 'contact_us_screening'
+  = partial 'video_quote', locals: current_page.data.video_quotes[2]
+  = partial 'video_quote', locals: current_page.data.video_quotes[1]

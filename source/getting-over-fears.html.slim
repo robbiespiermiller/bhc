@@ -9,9 +9,7 @@ video_quotes:
   -
     title: "Linda Gets Over Fear Of Driving Over Bridges With Hypnosis"
     src: 'https://www.youtube.com/embed/8OeLh6_I2sA'
-  -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
+          
 
 quotes:
   -
@@ -60,6 +58,13 @@ quotes:
         li Fear of vomiting
         li Bathroom related fears
 
+    br
+    = partial 'title_quote_content', locals: current_page.data.quotes[0]
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
+    = partial 'title_quote_content', locals: current_page.data.quotes[3]
+    br
+ 
+
     p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
 
     h3 Call Now For Your FREE Hypnotic Screening - 905-634-4777
@@ -68,8 +73,8 @@ quotes:
 
 
 .side-panel.col-sm-4
+  = partial 'readers_choice_side_nav'
   = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
-  = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
+  = partial 'contact_us_screening'
+  = partial 'title_quote', locals: current_page.data.quotes[1]
   = partial 'title_quote', locals: current_page.data.quotes.last

@@ -1,23 +1,23 @@
-section.scoop
-  .alert.alert-success.alert-dismissable
-    | You have been subscribed to our newsletter.
-  .alert.alert-danger.alert-dismissable
-    button.close type='button' data-dismiss='alert' aria-hidden='true' =="&times;"
-    | Could not complete your request
-    br
-    ' Please contact us directly at
-    strong> 1-800-971-5744
-    ' or email us at
-    strong> support at(@) burlingtonhypnosis dot(.) ca
-    ' and we will put you on the list.
-  h1 Stay In The Know
-  .row
-    .col-sm-8
-      p Sign up for our free Burlington Hypnosis Newsletter:
+.panel.panel-default
+  .panel-heading
+    h1.panel-title Burlington Hypnosis Newsletter
+  .panel-body
+    section.scoop
+      .alert.alert-success.alert-dismissable
+        | You have been subscribed to our newsletter.
+      .alert.alert-danger.alert-dismissable
+        button.close type='button' data-dismiss='alert' aria-hidden='true' =="&times;"
+        | Could not complete your request
+        br
+        ' Please contact us directly at
+        strong> 905-634-4777 or 1-800-971-5744
+        ' or email us at
+        strong> support at(@) burlingtonhypnosis dot(.) ca
+        ' and we will put you on the list.
+      img.pull-right.img-circle.img-responsive src="images/fotolia_36305954.jpg"
+      p: strong Sign up for your free Burlington Hypnosis Newsletter:
       ul
         li Get valuable tips
         li Learn more about how hypnosis can help you
         li Find out about our latest offers
-    img.col-sm-4.img-circle src="images/fotolia_36305954.jpg"
-  .row
-    = partial 'newsletter_form', locals: {button_title: 'Subscribe'}
+      = partial 'newsletter_form', locals: {button_title: 'Subscribe'}

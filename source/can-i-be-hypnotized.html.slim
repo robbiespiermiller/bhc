@@ -3,10 +3,31 @@ title: Are You Hypnotizable?  Find Out Now
 seo_title: Can I Be Hypnotized
 seo_description: Take the quiz and find out if you can be hypnotized.
 seo_keywords: can I be hypnotized, can I be hypnotized quiz
+
+quotes:
+-
+    title: "'Hypnosis Has Worked For Me'"
+    quote: "I was a bit skeptical at first, but I can honestly say hypnosis has worked for me.  I feel more in control of my diet, whereas food used to control me.  I make healthier choices because I want to, not because I have to."
+    cite:  Tara, Marketing Specialist
+
+ -
+    title: "Single Mom Quits 1/2 Pack-A-Day Habit With Hypnosis"
+    quote: "I am a single mom and smoking was taking away from my son.  It was consuming my life and it had to stop.  I have tried cold turkey, patches and pills and nothing worked.  I was nervous to try hypnosis because of my previous failures.  It was easy though.  I'm finally free from something that was ruining my life."
+    cite:  Natalie R, Real Estate Specialist
+
 ---
 .main-content.col-sm-8
   section
-    h1 How Hypnotizable Are You?  Take The Quiz
+    h1 Can You Be Hypnotized?
+    h3 It's really up to you...
+    p There are many people who believe that when you are hypnotized, you lose control.  This is a myth.  The truth is that all hypnosis is self-hypnosis.  You are the one who does it.  And you are in control at all times.  
+    p People do experience varying levels of suggestibility.  And most people can get into a deep enough state of hypnosis to use hypnosis as a tool to make important life changes.  
+
+    p Take the quiz to see how suggestible you are.  
+
+    h3 How Hypnotizable Are You?  
+
+    p Take this short hypnosis quiz, and we'll send you the answer.
 
     = partial "hypnosis_quiz"
 
@@ -17,4 +38,6 @@ seo_keywords: can I be hypnotized, can I be hypnotized quiz
     p Find out more about <a href="how-does-hypnosis-work.html">how hypnosis works</a>.
 
 .side-panel.col-sm-4
-  = partial 'contact_us_screening'
+  = partial 'readers_choice_side_nav'
+  = partial 'title_quote', locals: current_page.data.quotes.first
+  = partial 'how_hypnosis_works'

@@ -1,16 +1,8 @@
 ---
 title: Sleep Better With Hypnosis | Burlington Hypnosis Centre
 seo_title: Sleep Better With Hypnosis | Burlington Hypnosis
-seo_keywords: "insomnia, natural sleep aid, sleep hypnosis, problems sleeping, sleep disorders, having trouble sleeping"
+seo_keywords: "insomnia, sleep clinic, natural sleep aid, sleep hypnosis, problems sleeping, sleep disorders, having trouble sleeping"
 seo_description: Having trouble sleeping?  Hypnosis can help.  Call now for your free screening 905-634-4777.
-
-video_quotes:
-  -
-    title: "Angela Is Excited About Becoming A Hypnotist"
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
-  -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
 
 quotes:
  -
@@ -24,6 +16,7 @@ quotes:
  -
     title: "Sleeping Better, Thinking Clearer, More Confident"
     quote: "I have been able to overcome my sleep disruption.  Better sleep is allowing me to think more clearly, & be in a better emotional state.  I am more confident and stronger in meeting challenges in my life."
+    cite:
  -
     title: "Look Forward To Bedtime Now"
     quote:  "I had a great difficulty going to sleep and I was only sleeping for a few hours.  A bit skeptical at first, I started my sessions and by my second appointment my sleep improved, my vitality has returned and I actually look forward to bedtime."
@@ -41,13 +34,25 @@ quotes:
 
     h3 How Can Sleep Hypnosis Help You?
 
-    p Sleep hypnosis trains your mind to enter the state between waking and sleeping, called the hypnogogic state. This is a naturally occurring state of hypnosis. Many people who have trouble sleeping or staying asleep find themselves thinking or worrying while they are tossing and turning. You may worry about what time it is, or how you will function the next day when you are exhausted, or you may talk to yourself in your head about your worries or plans, or you may be frustrated or angry about not being able to fall asleep. This makes it even harder to fall asleep. You can learn how to choose your state of mind so that when it is time to sleep, you can drift off into sleep. Sleep hypnosis teaches you how to relax your mind and body and usher yourself into sleep by entering the relaxing state of hypnosis.
+    p Sleep hypnosis trains your mind to enter the state between waking and sleeping, called the hypnogogic state. This is a naturally occurring state of hypnosis. 
+
+    p Many people who have trouble sleeping or staying asleep find themselves thinking or worrying while they are tossing and turning. You may worry about what time it is, or how you will function the next day when you are exhausted, or you may talk to yourself in your head about your worries or plans, or you may be frustrated or angry about not being able to fall asleep. This makes it even harder to fall asleep. 
+
+    p You can learn how to choose your state of mind so that when it is time to sleep, you can drift off into sleep. Sleep hypnosis teaches you how to relax your mind and body and usher yourself into sleep by entering the relaxing state of hypnosis.
+
+    br
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
+    br
 
     h5 Stress and Sleep
 
     p Managing stress is a crucial way to get a better sleep. When your mind is relaxed, falling asleep is easier. With sleep hypnosis, you will learn how to get yourself out of stressful thoughts and feelings, so you can relax and be calmer about your life. We can help you get that restful and stress-free night so you can function the next day and enjoy your life.
 
-    p We have custom programs for people who are having sleep problems. Whether you are having trouble sleeping, or find yourself waking up at night, hypnosis is a great natural sleep aid.
+    br
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
+    br
+
+    p We have custom programs at our sleep clinic in Burlington for people who are having sleep problems. Whether you are having trouble sleeping, or find yourself waking up at night, hypnosis is a great natural sleep aid.
       
     p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
 
@@ -56,8 +61,7 @@ quotes:
     p Come visit up today! We offer a free 30-40 minute screening process to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  If we do not feel hypnosis will help you, we will tell you so.  Call us now to book your free screening 905-634-4777.
 
 .side-panel.col-sm-4
-  = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
+  = partial 'readers_choice_side_nav'
+  = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'title_quote', locals: current_page.data.quotes.last

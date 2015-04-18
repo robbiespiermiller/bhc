@@ -6,21 +6,19 @@ seo_description: Your Child Is Struggling - Hypnosis Can Help. Call Burlington H
 
 video_quotes:
   -
-    title: "Angela Is Excited About Becoming A Hypnotist"
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
-  -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
+    title: "Nursing Student Exam Results Improve By 45% With Hypnosis"
+    src: 'https://www.youtube.com/embed/lfHPcgRWguI?rel=0'
 
 quotes:
- -
-    title: "Scoring More Goals, Now Confident In Sports & Socially"
-    quote: "Before I came here I used to mumble when I answered questions.  I also looked down at my feet when people talked to me.  I wasn't confident in sports and always worried about not playing well.  Now I am confident and I can look people in the eyes and talk to them.  I have improved in sports and I am starting to score more goals."
-    cite: Evan R, Hockey Player
  -
     title: "Changed Thinking Dramatically"
     quote: "After our last session I went to the Ontario Horse Trials Championships. I now have my three qualifying scores to do a 1*, which is the beginning of the internationally recognized levels. I have changed my thinking dramatically.  Instead of thinking I'm just a crappy rider I'm able to pinpoint the issues and work on them systematically which is much more rewarding!  Thank you very much for your help with this, I really feel like I've turned a corner"
     cite:  Annie M.
+ -
+    title: "Scoring More Goals, Now Confident In Sports & Socially"
+    quote: "Before I came here I used to mumble when I answered questions.  I also looked down at my feet when people talked to me.  I wasn't confident in sports and always worried about not playing well.  Now I am confident and I can look people in the eyes and talk to them.  I have improved in sports and I am starting to score more goals."
+    cite: Evan R, Hockey Player
+ 
  -
     title: "Figure Skater Gains Confidence & Falls In Love With Skating All Over Again"
     quote: "Before coming to Burlington Hypnosis, I had bad performance anxiety.  I couldn't do the sport I love.  Now, I have fallen in love with figure skating all over again!  Not only has hypnosis helped me with skating, it has helped me with school and everyday life.  I find myself in a much better state of mind."
@@ -34,7 +32,9 @@ quotes:
 .main-content.col-sm-8
   section
     h1 Hypnotic Mind Training For Sports & Academic Performance
-
+    .content-img
+        img src="images/mind-training.jpg" alt="Annie uses hypnosis in the Ontario Horse Trials Championships"
+    = partial 'title_quote', locals: current_page.data.quotes.first
     p We use hypnosis to help children and adults in the Halton, Hamilton and surrounding areas have the confidence and mind training to boost their performance - whether it's for sports or academics.  Our custom programs help you enhance your ability to reach your goals and realize your potential.  Our hypnosis programs include help with:
     ul
       li Boosting Confidence
@@ -54,7 +54,6 @@ quotes:
 
 .side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us'
+  = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'title_quote', locals: current_page.data.quotes.last
