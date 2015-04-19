@@ -10,20 +10,29 @@ html
     = stylesheet_link_tag "all"
   body.container
     header.row
-      h1.col-sm-6 Burlington Hypnosis Centre
-      .phone.col-sm-6 Call Now 905-634-4777
+      h1.col-sm-7.col-md-8 Burlington Hypnosis Centre
+      .phone.col-sm-5.col-md-4.hidden-xs Call Now 905-634-4777
     main.row
       nav.navbar.navbar-default role='navigation'
-        ul.nav.navbar-nav.navbar-left
-          =nav_link_to 'Home', 'index.html'
-          =nav_link_to 'Weight Loss', 'weight-loss-hypnosis.html'
-          =nav_link_to 'Stop Smoking', 'stop-smoking-with-hypnosis.html'
-          =nav_link_to 'Need Help?', 'hypnosis-programs.html'
-          =nav_link_to 'Your Guarantee', 'burlington-hypnosis-guarantee.html'
-          =nav_link_to 'Become A Hypnotist', 'hypnotherapy-training.html'
-          =nav_link_to 'Corporate', 'corporate-training.html'
-          =nav_link_to 'Media', 'media-burlington-hypnosis.html'
-          =nav_link_to 'Inside Story', 'about-burlington-hypnosis.html'
+        .navbar-header
+          button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#nav-menu"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .navbar-brand.visible-xs
+            | Call Now 905-634-4777
+        #nav-menu.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-left
+            =nav_link_to 'Home', 'index.html'
+            =nav_link_to 'Weight Loss', 'weight-loss-hypnosis.html'
+            =nav_link_to 'Stop Smoking', 'stop-smoking-with-hypnosis.html'
+            =nav_link_to 'Need Help?', 'hypnosis-programs.html'
+            =nav_link_to 'Your Guarantee', 'burlington-hypnosis-guarantee.html'
+            =nav_link_to 'Become A Hypnotist', 'hypnotherapy-training.html'
+            =nav_link_to 'Corporate', 'corporate-training.html'
+            =nav_link_to 'Media', 'media-burlington-hypnosis.html'
+            =nav_link_to 'Inside Story', 'about-burlington-hypnosis.html'
       = yield
 
     footer.row
