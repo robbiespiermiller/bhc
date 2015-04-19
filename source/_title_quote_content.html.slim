@@ -1,3 +1,6 @@
-section.quote
-  h4= title
-  = partial 'quote', locals: {quote: quote, cite: cite}
+.panel.panel-info
+  .panel-heading: .panel-title
+    h4= title
+  .panel-body
+    section.quote
+      = partial 'quote', locals: {quote: quote, cite: cite}

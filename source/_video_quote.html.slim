@@ -1,4 +1,6 @@
-section.video-quote
-  h4= title
-  div.video
-    iframe src="#{src}" frameborder="0" allowfullscreen
+.panel.panel-default
+  .panel-body
+    section.video-quote
+      h4= title
+      div.video.embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item src="#{src}" frameborder="0" allowfullscreen

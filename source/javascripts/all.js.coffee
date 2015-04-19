@@ -1,6 +1,7 @@
 #= require bootstrap.min
 #= require googleanalytics
-#= require_tree .
+#= require googleremarketing
+#= require_self
 
 form_submit = (selector)->
   $(".#{selector} form").on 'submit', (e)->
