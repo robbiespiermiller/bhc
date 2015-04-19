@@ -8,12 +8,9 @@ seo_description: Fed up with being stressed all the time?  Hypnosis can help.  C
 
 video_quotes:
   -
-    title: "Angela Is Excited About Becoming A Hypnotist"
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
-  -
-    title: "Jason's Business Mentorship Experience At Hypnosis Training Canada"
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
-
+    title: "Jamie Overcomes Stress & Fear With Hypnosis"
+    src: 'http://www.youtube.com/embed/iPO7eqQHGJg?rel=0'
+  
 quotes:
   -
     title: "Unhappy & Out Of Control Becomes Grounded & Calm With Hypnosis"
@@ -43,10 +40,21 @@ quotes:
 .main-content.col-sm-8
   section
       h1 Manage Stress With Hypnosis
-
+      .content-img
+        img src="images/self-confidence.jpg" alt="Increase Self-Confidence With Hypnosis"
       p You are stressed.  You worry about the future.  Debate about decisions and details.  Maybe you are overwhelmed with life and all the things you need to do, places you need to be, people you need to be there for.  Or you may have very little to do, and feel overwhelmed at the possiblity of doing anything.  
 
       p You may find that the stress makes you even more stressed, because you know you should just relax, and you wish you could just relax.  It is affecting your wellbeing, success, relationships, enjoyment of life.  You are fed up with being a prisoner of your own mind.  You know there is more to life.
+
+
+      = partial 'title_quote_content', locals: current_page.data.quotes[1]
+
+      = partial 'title_quote_content', locals: current_page.data.quotes[2]
+
+      = partial 'title_quote_content', locals: current_page.data.quotes[3]
+
+
+
 
       p Hypnosis can help you reduce stress and live a more relaxed, enjoyable and fulfilling life.
 
@@ -61,6 +69,6 @@ quotes:
 
 .side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first
+  = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'title_quote', locals: current_page.data.quotes.last

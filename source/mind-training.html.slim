@@ -32,10 +32,10 @@ quotes:
 .main-content.col-sm-8
   section
     h1 Hypnotic Mind Training For Sports & Academic Performance
+    
+    p We use hypnosis to help children and adults in the Halton, Hamilton and surrounding areas have the confidence and mind training to boost their performance - whether it's for sports or academics.  Our custom programs help you enhance your ability to reach your goals and realize your potential.  Our hypnosis programs include help with:
     .content-img
         img src="images/mind-training.jpg" alt="Annie uses hypnosis in the Ontario Horse Trials Championships"
-    = partial 'title_quote', locals: current_page.data.quotes.first
-    p We use hypnosis to help children and adults in the Halton, Hamilton and surrounding areas have the confidence and mind training to boost their performance - whether it's for sports or academics.  Our custom programs help you enhance your ability to reach your goals and realize your potential.  Our hypnosis programs include help with:
     ul
       li Boosting Confidence
       li Getting Into "The Zone" For Peak Performance
@@ -46,6 +46,13 @@ quotes:
       li Hypnotic Study Skills
       li Hypnotic Test Taking Skills
 
+    
+    = partial 'title_quote', locals: current_page.data.quotes.first
+    
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
+
+
     p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
 
     h3 Call Now For Your FREE Hypnotic Screening - 905-634-4777
@@ -55,5 +62,4 @@ quotes:
 .side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'contact_us_screening'
-  = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.last

@@ -33,12 +33,18 @@ quotes:
 .main-content.col-sm-8
   section
       h1 Build Self-Confidence and Self-Esteem With Hypnosis
-
+      .content-img
+        img src="images/self-confidence.jpg" alt="Increase Self-Confidence With Hypnosis"
       p When you have a problem with self-confidence or self-esteem, it is like there are clouds blocking the sun.  You are not able to participate fully in life.  You may feel disappointment in yourself.  Self-conscious with others.  Fearing scrutiny.  Maybe you procrastinate and distract from doing what you know you need to do.  Or make up all kinds of stories to rationalize why you are stuck, or why it is just not possible for you.  
 
       p You know you are capable of more.  You just don't know how to free yourself from this prison.  You may blame your childhood, your genes, or the economy.  This leads to further disappointment, and the cycle continues.
 
       p Your self-confidence level may be affecting your relationships, your career, your financial situation, or your freedom to do what you want to do in life.  
+
+      = partial 'title_quote_content', locals: current_page.data.quotes[1]
+      = partial 'title_quote_content', locals: current_page.data.quotes[2]
+      = partial 'title_quote_content', locals: current_page.data.quotes[3]
+
 
       p Life is too short to waste it away.  Get the help you need to live your life fully today.  
 
@@ -50,4 +56,3 @@ quotes:
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
-  = partial 'title_quote', locals: current_page.data.quotes.last

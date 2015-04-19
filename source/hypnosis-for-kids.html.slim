@@ -29,20 +29,22 @@ quotes:
 .main-content.col-sm-8
   section
     h1 Discover How Hypnosis For Kids & Teenagers Can Help
-
     p Helping kids learn to succeed with hypnosis is one of our specialties.
-    p We use hypnosis to help children in the Halton, Hamilton and surrounding areas with many 
-      challenges, including:
+    p We use hypnosis to help children in the Halton, Hamilton and surrounding areas with many challenges, including:
+  
+    .content-img
+        img src="images/hypnosis-for-kids.jpg" alt="Hypnosis For Kids"
+
     ul
-      li <a href="breaking-habit.html">Bedwetting</a>
+      li <a href="mind-training.html">Improving Sports Performance</a>
+      li <a href="mind-training.html">Study Habits & Study Skills</a> (ending procrastination, focus and concentration, memory, confidence in learning, test taking etc.)
       li <a href="getting-over-fears.html">Getting Over Fears</a> (fear of needles, fear of bees, test-taking fears, public speaking fears etc.)
       li <a href="hypnosis-for-sleep.html">Sleep Improvement</a>
-      li <a href="mind-training.html">Study Habits & Study Skills</a> (ending procrastination, focus and concentration, memory, confidence in learning, test taking etc.)
-      li <a href="breaking-habit.html">Breaking Bad Habits</a> (nail biting, hair pulling, eyebrow/eyelash pulling etc.)
+           li <a href="breaking-habit.html">Breaking Bad Habits</a> (nail biting, hair pulling, eyebrow/eyelash pulling etc.)
+      li <a href="breaking-habit.html">Bedwetting</a>
       li Bullying
       li Shyness
       li Making Friends
-      li <a href="mind-training.html">Improving Sports Performance</a>
       li Healthy Eating Habits
 
     p If your child is struggling, hypnosis is a very powerful tool that can help. Kids naturally spend more time in the hypnotic state than adults. Children tend to be flexible and open to new experiences. All helpful for hypnotic success. And the skills your child learns at Burlington Hypnosis will serve them for a lifetime.
@@ -50,7 +52,6 @@ quotes:
     br
     = partial 'title_quote_content', locals: current_page.data.quotes[0]
     = partial 'title_quote_content', locals: current_page.data.quotes[2]
-    = partial 'title_quote_content', locals: current_page.data.quotes[3]
     
     br
 
@@ -62,7 +63,7 @@ quotes:
 
 
 .side-panel.col-sm-4
-  = partial 'readers_choice_side_nav'
-  = partial 'contact_us_screening'
-  = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.last
+  = partial 'contact_us_screening'
+  = partial 'title_quote', locals: current_page.data.quotes[3]
+  = partial 'title_quote', locals: current_page.data.quotes.first
