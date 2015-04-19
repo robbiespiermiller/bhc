@@ -42,6 +42,10 @@ quotes:
     title:  "New Dad Quits Pack-A-Day Habit With Hypnosis"
     quote:  "I tried all sorts of quit smoking methods.  I was desperate to quit for my soon to be born baby and my wife.  I found Burlington Hypnosis and right from the first meeting felt like a new person.  Not only did I quit after smoking since I was twelve, but I was able to work on a number of personal issues.  My wife and others have noticed a dramatic change in my attitude.  Thank you for giving me my life back."
     cite:  Aaron K, Technician
+  -
+    title: "40 Year Pack-A-Day Smoker Now Free Of Nasty Habit"
+    quote: "Been a smoker for 40 years &amp; smoking about a pack a day!  Tried every method to quit - you name it - done it all!  I must say this works - I feel free from my nasty habit!  Do yourself a favour &amp; do it!  I wish I came to Burlington Hypnosis sooner!!"
+    cite:  Jerry T, Self-Employed
 ---
 
 .main-content.col-sm-8
@@ -70,6 +74,8 @@ quotes:
 
     p You know that you have had it with all the excuses and rationalizations. When you are ready to finally quit smoking, stop smoking hypnosis can help you break the habit. 
 
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
+
     h3 How Stop Smoking Hypnosis Works
 
     p Think back to the time when you smoked your first cigarette. You may remember that you coughed. You may have even choked on the smoke or felt light-headed or nauseous. Most people have to lie to themselves at least a few times while suffering through the cigarette to finally be able to take the stench and physical discomfort.  
@@ -77,6 +83,9 @@ quotes:
     p With stop smoking hypnosis, you are going to use fixation and repetition to remind yourself of the truth. You were not born with an urge to smoke. You basically hypnotized yourself into doing it by smoking when you were bored, stressed, angry or nervous. After a while it seemed like smoking was how you got out of those unwanted states of mind. Nothing could be further from the truth.  
 
     p What if you could learn to deal with stress, boredom or anger without using cigarettes as the cue to change your state of mind? Could giving up smoking be easy if that happened?
+
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
+
 
     p Learn <a href="hypnosis-stop-smoking-studies.html">more</a> about stop smoking hypnosis.
 
@@ -91,6 +100,7 @@ quotes:
     p 10 Years: $36,500
     p 20 Years: $73,000
     br
+     = partial 'title_quote_content', locals: current_page.data.quotes[5]
     h5 Why suffer when you can get the help you need?  
     h3 Call now for your free screening 905-634-4777
 
@@ -99,6 +109,7 @@ quotes:
   = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'video_quote', locals: current_page.data.video_quotes[1]
-  = partial 'title_quote', locals: current_page.data.quotes.last
+  = partial 'title_quote', locals: current_page.data.quotes[3]
   = partial 'video_quote', locals: current_page.data.video_quotes[0]
+  = partial 'title_quote', locals: current_page.data.quotes[4]
 
