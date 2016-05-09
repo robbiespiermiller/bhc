@@ -1,6 +1,6 @@
 .panel.panel-default
   .panel-heading
-    h1.panel-title Burlington Hypnosis Newsletter
+      h1.panel-title Burlington Hypnosis Newsletter
   .panel-body
     section.scoop
       .alert.alert-success.alert-dismissable
@@ -14,10 +14,11 @@
         ' or email us at
         strong> support at(@) burlingtonhypnosis dot(.) ca
         ' and we will put you on the list.
-      img.pull-right.img-circle.img-responsive src="images/fotolia_36305954.jpg"
+      
       p: strong Sign up for your free Burlington Hypnosis Newsletter:
       ul
         li Get valuable tips
         li Learn more about how hypnosis can help you
         li Find out about our latest offers
       = partial 'newsletter_form', locals: {button_title: 'Subscribe'}
+      p <a href="privacy-policy.html">Privacy Policy</a>

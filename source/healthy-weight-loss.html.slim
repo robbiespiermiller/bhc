@@ -16,6 +16,10 @@ quotes:
     quote:  "Before coming to the Burlington Hypnosis Centre, I was feeling very irritable that I could never reach my weight loss goals.  I ate enormous amounts of food and I was very moody.  Robbie has helped me achieve my goals and was able to help me realize that I can do whatever I set my mind to.  I feel more energetic and more motivated than I have ever before.  Thanks to hypnosis, I feel like my true self again."
     cite: Jacqueline S, Student
 
+video_quotes:
+  -
+    title: "Weight Loss 'Magical' With Hypnosis"
+    src: 'http://www.youtube.com/embed/3eVlYaPVqZU?rel=0'
 ---
 
 .main-content.col-sm-8
@@ -61,7 +65,7 @@ quotes:
 
       p When you are ready to escape the weight gain trap and enjoy a slim lifestyle, come in for a free consultation and we will see if hypnosis is right for you.  Call 905-634-4777 to book your consultation.
 
-      p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
+      p Here's <a href="burlington-hypnosis-guarantee.html">Our Promise</a> To You
 
       p <a href="hypnosis-weight-loss-studies.html">Learn more</a> about weight loss hypnosis.
       p Find out how hypnosis can help you <a href="binge-eating.html">stop binge eating</a>.
@@ -70,6 +74,7 @@ quotes:
 
 .side-panel.col-sm-4
   = partial 'readers_choice_side_nav'
+  = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.last

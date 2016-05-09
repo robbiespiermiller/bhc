@@ -59,6 +59,9 @@ quotes:
               <a href="hypnosis-for-kids.html">Hypnosis For Kids & Teenagers</a>
       li Other programs available upon request
         
+    br
+    = partial 'soundcloud_am640'
+    br
     = partial 'title_quote_content', locals: current_page.data.quotes[2]
     = partial 'title_quote_content', locals: current_page.data.quotes[1]
 
@@ -71,7 +74,7 @@ quotes:
     p Discover <a href="how-does-hypnosis-work.html">how hypnosis works</a>.
 
 
-    p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
+    p Here's <a href="burlington-hypnosis-guarantee.html">Our Promise</a> To You
 
     p Why suffer when you can get the help you need?  Call now - 905-634-4777.
 
@@ -79,7 +82,9 @@ quotes:
 
 .side-panel.col-sm-4
   = partial 'readers_choice_side_nav'
-  = partial 'contact_us_screening'
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'title_quote', locals: current_page.data.quotes[0]
+  = partial 'contact_us_screening'
+  h3 The Burlington Hypnosis Hour
+  = partial 'soundcloud_chml'
 

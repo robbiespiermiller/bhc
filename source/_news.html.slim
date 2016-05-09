@@ -1,0 +1,12 @@
+.panel.panel-default
+  .panel-body
+    .news-img
+        img.img-responsive src="images/#{img}" alt=alt_text
+     
+    h3
+    	- if site =~ /http/
+    		a target="blank" href="#{site}"
+    			= title
+    	- else
+    		a href="#{site}"
+    			= title

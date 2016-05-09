@@ -29,31 +29,33 @@ html
             =nav_link_to 'Weight Loss', 'weight-loss-hypnosis.html'
             =nav_link_to 'Stop Smoking', 'stop-smoking-with-hypnosis.html'
             =nav_link_to 'Need Help?', 'hypnosis-programs.html'
-            =nav_link_to 'Your Guarantee', 'burlington-hypnosis-guarantee.html'
+            =nav_link_to 'Our Promise', 'burlington-hypnosis-guarantee.html'
             =nav_link_to 'Become A Hypnotist', 'hypnotherapy-training.html'
             =nav_link_to 'Corporate', 'corporate-training.html'
             =nav_link_to 'Media', 'media-burlington-hypnosis.html'
             =nav_link_to 'Inside Story', 'about-burlington-hypnosis.html'
-      = yield
+      = yield    
 
     footer.row
       .col-sm-12
+        = partial 'disclaimer'
+        br
         nav.navbar.navbar-default role='navigation'
           ul.nav.navbar-nav.navbar-left
             li
-              a href="http://plus.google.com/117610896566193288208" rel="publisher"
+              a href="http://plus.google.com/+BurlingtonhypnosisCa/posts" target="_blank" rel="publisher"
                 i.fa.fa-google-plus
                 |   Google+
             li
-              a href="http://www.youtube.com/channel/UCHQSwKwgEqmcxpt-ETALwyw"
+              a href="https://www.youtube.com/user/BurlingtonHypnosis" target="_blank"
                 i.fa.fa-youtube
                 |   YouTube
             li
-              a href="http://www.facebook.com/pages/Burlington-Hypnosis/203711222980435"
+              a href="http://www.facebook.com/pages/Burlington-Hypnosis/203711222980435" target="_blank"
                 i.fa.fa-facebook
                 |   Facebook
             li
-              a href="http://www.linkedin.com/pub/robbie-spier-miller/12/608/39"
+              a href="http://www.linkedin.com/pub/robbie-spier-miller/12/608/39" target="_blank"
                 i.fa.fa-linkedin
                 |   LinkedIn
           ul.nav.navbar-nav.navbar-right
@@ -66,7 +68,7 @@ html
                 i.fa.fa-user
                 |   About Us
             li
-              = link_to 'site-map.html' do
+              = link_to 'sitemap.html' do
                 i.fa.fa-sitemap
                 |   Site Map
             li
@@ -77,9 +79,6 @@ html
       .whole
         div.disclaimers
           p Copyright Burlington Hypnosis Centre 2015. All rights reserved.
-
-          p
-            | *THE TESTIMONIALS SHOWN ARE ONLY THE EXPERIENCE OF THE CLIENT IN THE TESTIMONIAL. RESULTS ARE NOT TYPICAL.
 
           p The Burlington Hypnosis Centre offers training in self-hypnosis for self-help. It is not a medical facility and does not diagnose or treat medical conditions. The service provided is for educational purposes only. It is not therapy, and is not meant as a replacement for any other intervention.
   script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"

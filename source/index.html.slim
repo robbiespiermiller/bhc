@@ -1,8 +1,9 @@
 ---
-title: Burlington Hypnosis Centre
-seo_title: "Burlington Hypnosis Centre | Weight Loss Hypnosis, Stop Smoking"
-seo_description: ""
-seo_keywords: ""
+title: "Weight Loss, Stop Smoking, Stress | Burlington Hypnosis Centre"
+description: "quit smoking, lose weight, manage stress"
+seo_title: "Weight Loss, Stop Smoking, Sleep Better Hypnosis Training | Burlington Hypnosis Centre"
+seo_keywords: "hypnotherapy burlington, quit smoking, lose weight, sleep better, hypnosis training"
+seo_description: "Need help?  Hypnosis for weight loss, stop smoking, stress management, pain management, and more."
 
 video_quotes:
   -
@@ -11,6 +12,14 @@ video_quotes:
   -
     title: Meet <a href="https://plus.google.com/100600154685554388207?rel=author" target="_blank">Robbie Spier Miller</a>, Director of Burlington Hypnosis
     src: 'http://www.youtube.com/embed/WbPZSKpnPHw?rel=0'
+  -
+    title: "Weight Loss 'Magical' With Hypnosis"
+    src: 'http://www.youtube.com/embed/3eVlYaPVqZU?rel=0'
+  -
+    title: Awesome Experience Helping People And Earning A Great Income
+    src: 'http://www.youtube.com/embed/P6m26ZgXrnU?rel=0'
+    quote: "I'm already making a very comfortable income.  I'm quite surprised at how easy it's been."
+    cite:  Angelan McClenahan
 
 quotes:
   -
@@ -33,7 +42,38 @@ quotes:
     title: "Binge Eating Now Under Control - Lost Significant Weight"
     quote: When I came to Burlington Hypnosis Centre I didn't feel in control of what or how much I ate and became quite overweight. Hypnosis has helped me take control of this and other issues in my life. I have successfully controlled the binge eating and have lost significant weight. I have much more energy and am happier in my own skin.
     cite: Brenda K.
+  -
+    title: "A Weight Has Been Lifted"
+    src: images/Cayla-A.jpg
+    quote: Before coming to hypnosis, I was in a very negative state.  I fought often with my boyfriend, and was very negative toward myself.  During the past few weeks I have finally been able to stop the negative self talk and even prevent fights with my boyfriend.  I am OK with who I am and can’t wait to see all the positive changes.  A weight has been lifted.
+    cite: Cayla A., Accountant/Yoga Teacher
+news:
+  -
+    title: 5 Surprising Ways You're Ruining Your Weight Loss Goals
+    img: weight-loss-goals.jpg
+    alt_text: 5 ways you're ruining your weight loss goals
+    site: http://www.yourtango.com/experts/robbie-spier-miller/5-surprising-ways-youre-killing-your-weight-loss-goals
+  -
+    title: I Hate Exercise!  Hypnosis Can Help You Love Your Fitness Routine
+    img: fitness-program.jpg
+    alt_text: Hypnosis Can Help You Love Your Fitness Routine
+    site: hypnosis-fitness-program.html
 
+  -
+    title: Become An Awesome Stress-Free Parent By Following These 12 Steps
+    img: stress-management.jpg
+    alt_text: Stress Management For Parents
+    site: http://www.yourtango.com/experts/robbie-spier-miller/12-ways-parents-can-reduce-stress-realistically-be-better-parents
+  -
+    title: Perceptioneering - Rare Opportunity To Train With Scott McFall
+    img: perceptioneering.jpg
+    alt_text: Perceptioneering - Hypnosis Training With Scott McFall
+    site: http://www.hypnosistrainingcanada.com/perceptioneering.html
+  -
+    title: Food 4 Kids Summer Food Drive & Charity Hat Event
+    img: Food4Kids.png
+    alt_text: Food 4 Kids Summer Food Drive & Charity Hat Event
+    site: burlington-hypnosis-events.html
 ---
 .main-content.col-sm-8
   section
@@ -42,24 +82,34 @@ quotes:
     / h3 <a href="can-i-be-hypnotized.html">Take The Quiz</a>
 
      /h3 Call now for your free consultation 905-634-4777
-
-    a href="weight-loss-by-hypnosis.html"
+    
+    a href="weight-loss-by-hypnosis.html" 
       img.img-responsive.center-block src="images/helene-berthiaume-weight-loss.jpg"
+
+   
+    h3.intro Our popular programs include weight loss hypnosis, stop smoking hypnosis, and stress management hypnosis. Be one of our many hundreds of satisfied clients.
+
+
+    h3 What's New
+    - current_page.data.news.each do |news|
+      = partial 'news', locals: news
 
     h2 How We Can Help You: Programs at Burlington Hypnosis
 
     p Hypnosis uses the power of suggestion to help you reach your goals. Our hypnotism techniques can help you with the following:
     ul
-      li <a href="weight-loss-hypnosis.html">Weight Loss</a>
-      li <a href="stop-smoking-with-hypnosis.html">Stop Smoking</a>
-      li <a href="self-confidence.html">Self-confidence</a>
-      li <a href="stress-management.html">Stress Management</a>
-      li <a href="getting-over-fears.html">Fears</a>
-      li <a href="breaking-habit.html">Breaking Habits</a>
-      li <a href=""relationship-help.html>Relationships</a>
-      li <a href="pain-management.html">Pain Management</a>
-      li <a href="hypnosis-for-sleep.html">Sleep Improvement</a>
-      li <a href="mind-training.html">Sports and Academic Performance Improvement</a>
+      li: a href="weight-loss-hypnosis.html" Weight Loss
+      li: a href="stop-smoking-with-hypnosis.html" Stop Smoking
+      li: a href="self-confidence.html" Self-confidence
+      li: a href="stress-management.html" Stress Management
+      li: a href="getting-over-fears.html" Fears
+      li: a href="breaking-habit.html" Breaking Habits
+      li: a href="relationship-help.html" Relationships
+      li: a href="pain-management.html" Pain Management
+      li: a href="hypnosis-for-sleep.html" Sleep Improvement
+      li: a href="mind-training.html" Sports and Academic Performance Improvement
+      li: a href="hypnosis-for-kids.html" Hypnosis For Kids & Teenagers
+      li Other programs available upon request.
 
     p Our popular programs are weight loss hypnosis, stop smoking hypnosis, stress management hypnosis and sleep hypnosis. Be one of our hundreds of satisfied clients.
 
@@ -103,15 +153,27 @@ quotes:
 
     = partial 'title_quote_content', locals: current_page.data.quotes[2]
 
-    p Come see us today! Book a free 30-40 minute screening to see if hypnosis is right for you. It is fun and informative. We will provide you an honest and in depth explanation on how hypnosis can help you. If we do not think hypnosis will benefit you, we will tell you so. You can contact us at 905-634-4777, or come see us at our Burlington facility located at 2289 Fairview Street, Suite 423.
+    p Come see us today! Book a free 30-40 minute screening to see if Burlington Hypnosis is right for you. It is fun and informative. We will provide you an honest and in depth explanation on how hypnosis can help you. If we do not think hypnosis will benefit you, we will tell you so. You can contact us at 905-634-4777, or come see us at our Burlington facility located at 2289 Fairview Street, Suite 423.
+
+    img src="http://clickserv.sitescout.com/conv/f2a08d654b7e2ae4" border="0"
+    
+    javascript:
+      var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'pixel.sitescout.com/iap/da88cab163f70459';
+      new Image().src = ssaUrl;
+
+
 
 .side-panel.col-sm-4
   = partial 'readers_choice_side_nav'
-  = partial 'video_quote', locals: current_page.data.video_quotes.last
+  // = partial 'pr_side_nav'
+  = partial 'soundcloud_am640'
+  = partial 'video_quote', locals: current_page.data.video_quotes[2]
   = partial 'contact_us_screening'
   = partial 'map'
   = partial 'title_quote', locals: current_page.data.quotes[1]
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'newsletter'
+  = partial 'video_quote', locals: current_page.data.video_quotes.last
+  = partial 'title_quote', locals: current_page.data.quotes[5]
   = partial 'title_quote', locals: current_page.data.quotes[0]
   = partial 'contact_us_screening'

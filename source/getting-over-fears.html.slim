@@ -9,7 +9,9 @@ video_quotes:
   -
     title: "Linda Gets Over Fear Of Driving Over Bridges With Hypnosis"
     src: 'https://www.youtube.com/embed/8OeLh6_I2sA'
-          
+  -
+    title: "Sandra Gets Over Fear Escalators With Hypnosis"
+    src: 'https://www.youtube.com/embed/PuZi6JiMkpc'        
 
 quotes:
   -
@@ -66,7 +68,7 @@ quotes:
     br
  
 
-    p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
+    p Here's <a href="burlington-hypnosis-guarantee.html">Our Promise</a> To You
 
     h3 Call Now For Your FREE Hypnotic Screening - 905-634-4777
 
@@ -76,5 +78,6 @@ quotes:
 .side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'contact_us_screening'
+  = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'title_quote', locals: current_page.data.quotes[1]
   = partial 'title_quote', locals: current_page.data.quotes.last

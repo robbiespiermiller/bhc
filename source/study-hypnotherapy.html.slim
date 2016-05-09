@@ -1,5 +1,5 @@
 ---
-title: "Hypnosis Training & Certification | Hypnosis Training Canada"
+title: "Hypnosis Courses | Hypnosis Training Canada"
 seo_title: "Hypnosis Training & Certification| Hypnosis Training Canada"
 seo_keywords: "hypnotherapy burlington, ontario hypnosis centre, hypnotherapy training toronto,hypnosis training canada, master hypnotist society"
 seo_description: "The best hands-on hypnosis training.  Learn how to earn an elite income doing what you love."
@@ -8,6 +8,10 @@ video_quotes:
   -
     title: "Life Changing Experience"
     src: 'http://www.youtube.com/embed/yQZxaRNMTOo?rel=0'
+  -
+    title: "Loving The Training"
+    src: 'http://www.youtube.com/embed/77mUxjues3o?rel=0'
+    
   
 quotes:
   -
@@ -45,7 +49,7 @@ quotes:
     li Practical Clinical Hypnosis: Technique And Applications  by Robert G. Meyer
     li The Relaxation Response  by Herbert Benson, M.D. & Miriam Z. Klipper
     li Self Hypnosis And Other Mind Expanding Techniques  by Charles Tebbetts
-    li Suggestive Therapeutics and Hypnotism by Herbert A. Parkyn, MD
+    li Suggestive Therapeutics and Hypnotism  by Herbert A. Parkyn, MD
     li Therapeutic Trances: The Cooperation Principle in Ericksonian Hypnotherapy  by Stephen G. Gilligan
     li Trance and Treatment: Clinical Uses Of Hypnosis  by David Speigel, Herbert X. Spiegel, M.D.
     li Trancework: An Introduction To The Practice Of Clinical Hypnosis  by Michael D. Yapko, Ph.D.
@@ -65,11 +69,14 @@ quotes:
 
     p Not in Greater Toronto or Southwestern Ontario? We can structure your training so that your travel is limited. 
 
-    p &Dagger; Hypnosis Training Canada, The Burlington Hypnosis Centre, Robbie Spier Miller and the Master Hypnotist Society, LLC reserve the right to refuse any student based upon scheduling and availability of Robbie Spier Miller as trainer.
+    = partial 'title_quote', locals: current_page.data.quotes.first
+   
+    p &Dagger; Hypnosis Training Canada, The Burlington Hypnosis Centre, Robbie Spier Miller and the Master Hypnotist Society Canada reserve the right to refuse any student based upon scheduling and availability of Robbie Spier Miller as trainer.
+    = partial 'contact_us_school'
 
 .side-panel.col-sm-4
+  = partial 'video_quote', locals: current_page.data.video_quotes[1]
+  = partial 'upcoming_courses'
   = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'contact_us_school'
-  = partial 'title_quote', locals: current_page.data.quotes.first
  
  

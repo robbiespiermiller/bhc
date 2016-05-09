@@ -1,5 +1,12 @@
 .panel.panel-default
   .panel-body
     section.quote
-      h4= title
-      = partial 'quote', locals: {quote: quote, cite: locals[:cite]}
+     	-if locals[:src]
+	      	.col-md-3
+	      		img.img-responsive.img-circle src=src
+	      	.col-md-9
+	      		h4= title
+      	-else
+    		 h4= title
+    	.clearfix
+     	= partial 'quote', locals: {quote: quote, cite: locals[:cite]}

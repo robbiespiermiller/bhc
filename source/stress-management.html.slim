@@ -10,7 +10,10 @@ video_quotes:
   -
     title: "Jamie Overcomes Stress & Fear With Hypnosis"
     src: 'http://www.youtube.com/embed/iPO7eqQHGJg?rel=0'
-  
+  -
+    title: "Hypnosis Helps Jim Through A Crisis"
+    src: 'http://www.youtube.com/embed/rwnU9BbKaJ4?rel=0'
+
 quotes:
   -
     title: "Unhappy & Out Of Control Becomes Grounded & Calm With Hypnosis"
@@ -60,7 +63,8 @@ quotes:
 
       h3 Call Now For Your FREE Hypnotic Screening 905-634-4777
 
-      p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
+      p Here's <a href="burlington-hypnosis-guarantee.html">Our Promise</a> To You
+
 
       p Call now to set up your free hypnotic screening to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  Call us now to book your free screening 905-634-4777.
 
@@ -70,5 +74,6 @@ quotes:
 .side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'contact_us_screening'
+  = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'title_quote', locals: current_page.data.quotes.last

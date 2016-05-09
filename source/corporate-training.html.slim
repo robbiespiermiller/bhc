@@ -6,7 +6,7 @@ seo_keywords: coaching, corporate coaching, corporate training
 
 quotes:
   -
-    title: "'I Was Really Impressed!'"
+    title: "Productivity Training - 'I Was Really Impressed!'"
     quote: "Everyone really enjoyed Robbie's stress management seminar. We learned some quick and easy ways to reduce stress and be more productive in our fast-paced work environment. As a sales person, I also learned some important things about people and communication that will help me serve my clients and colleagues better. I was really impressed!  Thank you."
     # //photo: img src="images/bot-savelson.jpg"
     cite: Bob Savelson, SVP, Sales & Marketing, eDev Tech 
@@ -20,23 +20,35 @@ quotes:
     quote:  "I came to Burlington Hypnosis Centre to help my productivity.  As a business owner I found myself procrastinating, when there was important work to get done.  I'm now turning it into a game to get my to-dos completed.  The cost of Robbie's services are minimal compared to what can be achieved by using my full potential."
     cite: Shaun O., Business Owner
 
+  -
+    title: "No Longer Terrified Of Public Speaking - Won Best Presenter"
+    quote: "Before I started hypnosis I was terrified of public speaking.  I had no confidence at all in my ability to communicate effectively.  My heart would be pounding, my voice would be shaking and I would be sweating.  Not a pretty picture.  After just 3 sessions I had to do a presentation in front of 12 of my peers and managers.  I could not believe the difference!  I was able to stand up there confidently and engage with my audience.  I was actually voted the best presenter of the day by our management team!  Thanks!"
+    cite: Cathy, Sales
+
 video_quotes:
   -
     title: "Hypnosis Boosts Business & Negotiation Skills"
     src: 'https://www.youtube.com/embed/hkUYFMs_tzI?rel=0'
+  -
+    title: "The Best Money I Have Spent On Business Training Ever"
+    src: 'https://www.youtube.com/embed/FmABvEqDOgI?rel=0'
+  -
+    title: "Tons Of Great Value"
+    src: 'https://www.youtube.com/embed/QKCu3v1kEtw?rel=0'
 
 ---
 .main-content.col-sm-8
   section
     h1 Corporate & Small Business Coaching
-    h3 Up Your Game With Hypnosis
+    h3 The Secret To Maximizing Business Success: Hypnosis
     
     p In business, there are all kinds of unknowns.  I'm sure you'll agree that the better prepared YOU are to handle what comes your way, the more successful you will be.
     p And this is where hypnosis comes in.  You know it all starts with your mind.  To communicate, inspire, lead, collaborate, negotiate, make clear decisions.  Now you can learn how to unleash the power of your mind.  Realize your potential.  Maximize your influence and success.
     p Maybe you are frustrated and stuck.  Or perhaps things are going great and you want to take things to the next level.  Either way, hypnosis opens up a world of possibility for you.
-    = partial 'title_quote_content', locals: current_page.data.quotes.last
+    = partial 'title_quote_content', locals: current_page.data.quotes[2]
 
     p We work with business owners, employees, and exectives in organizations large and small.  Group training and one-on-one coaching is available for:
+    
     .content-img
       img src="images/hypnosis-key-to-business-success.jpg" alt="Corporate Hypnosis Training"
 
@@ -55,10 +67,18 @@ video_quotes:
       li Working With Difficult People
       li Advertising, Marketing & PR
      
+    
+    = partial 'title_quote_content', locals: current_page.data.quotes[1]
+
     p A seasoned speaker, Robbie regularly presents at conferences, and conducts trainings and workshops.  Her presentations are enjoyable, inspiring and full of instant, practical and valuable take-aways for the audience.
+
+    = partial 'title_quote_content', locals: current_page.data.quotes[0]
+
 
     p Call us now to discuss your wants, needs and goals.  We will design a custom program just for you.  Call now - 905-634-4777.  You'll be glad you did.
    
 .side-panel.col-sm-4
-  = partial 'video_quote', locals: current_page.data.video_quotes.first
-  = partial 'title_quote', locals: current_page.data.quotes.first
+  = partial 'video_quote', locals: current_page.data.video_quotes[1]
+  = partial 'title_quote_content', locals: current_page.data.quotes[3]
+  = partial 'video_quote', locals: current_page.data.video_quotes[2]
+  = partial 'video_quote', locals: current_page.data.video_quotes[0]

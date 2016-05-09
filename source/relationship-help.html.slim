@@ -30,7 +30,18 @@ quotes:
     title: "Relationships Are Getting Better & Better"
     quote: "Before I came here I did not treat some people well.  Now I feel in control of my responses and am more confident.  My relationships are getting better and better."
     cite:  Maureen H, Self-Employed
-
+ -
+    title: "A Weight Has Been Lifted"
+    src: images/Cayla-A.jpg
+    quote: Before coming to hypnosis, I was in a very negative state.  I fought often with my boyfriend, and was very negative toward myself.  During the past few weeks I have finally been able to stop the negative self talk and even prevent fights with my boyfriend.  I am OK with who I am and can’t wait to see all the positive changes.  A weight has been lifted.
+    cite: Cayla A., Accountant/Yoga Teacher
+news:
+  
+  -
+    title: Become An Awesome Stress-Free Parent By Following These 12 Steps
+    img: stress-management.jpg
+    alt_text: Stress Management For Parents
+    site: http://www.yourtango.com/experts/robbie-spier-miller/12-ways-parents-can-reduce-stress-realistically-be-better-parents
 ---
 
 .main-content.col-sm-8
@@ -60,11 +71,15 @@ quotes:
 
       p Call now to set up your free hypnotic screening to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  Call us now to book your free screening 905-634-4777.
 
-      p We offer a <a href="burlington-hypnosis-guarantee.html">Written Service Guarantee</a>.
+      p Here's <a href="burlington-hypnosis-guarantee.html">Our Promise</a> To You
 
       h3 Call Now For Your FREE Hypnotic Screening - 905-634-4777
 
       p Come visit up today! We offer a free 30-40 minute screening process to see if hypnosis is right for you. At that time you will meet with the hypnotist, and all of your questions will be answered.  If we do not feel hypnosis will help you, we will tell you so.  Call us now to book your free screening 905-634-4777.
+
+      - current_page.data.news.each do |news|
+        = partial 'news', locals: news
+
 
 .side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first

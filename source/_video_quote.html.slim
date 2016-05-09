@@ -1,6 +1,12 @@
 .panel.panel-default
   .panel-body
     section.video-quote
-      h4= title
+      h4
+      	= title
+      	| *
+      - if locals['quote']
+      	= partial 'quote', locals: {quote: quote, cite: locals[:cite]}
       div.video.embed-responsive.embed-responsive-16by9
         iframe.embed-responsive-item src="#{src}" frameborder="0" allowfullscreen
+
+

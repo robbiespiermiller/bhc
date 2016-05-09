@@ -1,7 +1,7 @@
 ---
 title: "Stop Smoking Hypnosis | Burlington Hypnosis Centre"
 seo_title: Stop Smoking Hypnosis | Burlington Hypnosis
-seo_keywords: "quit smoking, stop smoking, how to stop smoking, stop smoking hypnosis, quit smoking ontario, how to quit smoking, quitting smoking"
+seo_keywords: "quit smoking, stop smoking, how to stop smoking, stop smoking hypnosis, quit smoking ontario, how to quit smoking, quitting smoking, the best quit smoking method"
 seo_description: "Quit Smoking Now. Call Burlington Hypnosis Centre at (905) 634-4777 for your free screening today."
 
 video_quotes:
@@ -50,16 +50,19 @@ quotes:
 
 .main-content.col-sm-8
   section
-    h1 Discover How Stop Smoking Hypnosis Can Help You Finally Kick The Smoking Habit
-    h3 The Best Quit Smoking Method
+    h1 
+      | Stop Smoking Hypnosis 
+      .small Your Opportunity To Finally Kick The Smoking Habit
+    section.video
+      = partial "_video_quote", locals: current_page.data.video_quote_large.first
+    p You are looking for the best quit smoking method to help you finally get smoking out of your life.
     p Every day at our stop smoking hypnosis clinic we hear smokers tell us how they suffer through coughing, shortness of breath, health scares, the stench, embarrassment and social hassle of smoking. Most smokers spend thousands of dollars a year on cigarettes, which quickly adds up to tens of thousands of dollars over time. 
 
     p Its obviously worth it to get smoking out of your life!  
 
     p Our stop smoking hypnosis program can help you quit smoking naturally. No patches, gum, drugs or vapours.    
 
-    section.video
-      = partial "_video_quote", locals: current_page.data.video_quote_large.first
+    
 
     h3 You Are Fed Up With All The Excuses
 
@@ -101,6 +104,9 @@ quotes:
     p 20 Years: $73,000
     br
      = partial 'title_quote_content', locals: current_page.data.quotes[5]
+
+    p Here's <a href="burlington-hypnosis-guarantee.html">Our Promise</a> To You
+
     h5 Why suffer when you can get the help you need?  
     h3 Call now for your free screening 905-634-4777
 
@@ -108,6 +114,7 @@ quotes:
   = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'contact_us_screening'
   = partial 'title_quote', locals: current_page.data.quotes.first
+  = partial 'soundcloud_am640'
   = partial 'video_quote', locals: current_page.data.video_quotes[1]
   = partial 'title_quote', locals: current_page.data.quotes[3]
   = partial 'video_quote', locals: current_page.data.video_quotes[0]
